@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="style.css">
+  <!--css & JavaScript file-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+  <!--bootstrap-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+  <!--ajax animation-->
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Tangerine|Pacifico">
+  <!--google fonts-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+  <title>ProjectCB</title>
+</head>
+
+<body class="bg-faded container-fluid">
+  <nav class="navbar navbar-toggleable navbar-inverse bg-primary py-sm-3 py-1">
+    <div class="container-fluid">
+      <!--why did this container draw the search bar to the left-->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a class="navbar-brand hidden-sm-up pl-1" style="font-size:16px;" href="#"><small>ProjectCB</small></a>
+      <form onsubmit="return false;" style="display:inline;"class="form-inline ml-auto hidden-sm-up">
+        <input type="text" class="px-1 py-1" onkeydown="if (event.keyCode == 13) {search(); return false;}" placeholder="&#xf041; Nearby Super Power &#xF002;" style="font-family:Arial, FontAwesome" required></input>
+      </form>
+
+      <div class="collapse navbar-collapse" id="collapsingNavbar">
+        <a class="navbar-brand hidden-sm-down pl-2" href="#">ProjectCB</a>
+        <ul class="navbar-nav" id=collapsingNavbar>
+          <li class="nav-item">
+            <a class="nav-link" href="mainUI.html">Home</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="profile.html">Profile</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" data-toggle="modal" data-target="#message">Messages</a>
+          </li>
+        </ul>
+        <form onsubmit="return false;" class="form-inline ml-auto hidden-sm-down">
+          <input type="text" class="px-1 py-1" onkeydown="if (event.keyCode == 13) {search(); return false;}" placeholder="&#xf041; Nearby Super Power  &#xF002;" style="font-family:Arial, FontAwesome" required></input>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <div class="row">
+    <div class="col-12 col-md-5">
+      <div class="card mt-1 mt-md-2" style="background-color:#FFFFEF; border-color:#E9D970;">
+        <img class="card-img-top" width="100%" src="http://i.imgur.com/ngy10gN.jpg" alt="Cover Photo">
+        <div class="card-block text-center">
+          <img style="max-width:120px; margin-top:-20%;" class="img-thumbnail" src="http://i.imgur.com/f6OZAwZ.jpg" alt="Profile Photo">
+          <div class="card-title"><strong>Ming Zhu</strong></div>
+          <div class="bg-faded card-text mx-2 mx-md-4 p-1 p-md-2" style="border-style:solid; border-color:#E9D970; border-width:1px;">
+            <small>I am a full stack software engineer and IT professional with a strong background in JavaScript, Mac, and Windows. My experience includes working with technologies such as React.js and Redux.</small>
+          </div>
+
+          <div class="bg-faded card-text mt-2 mx-2 mx-md-4 p-1 p-md-2" style="border-style:solid; border-color:#E9D970; border-width:1px;">
+            <ul class="nav nav-tabs" rold="tablist">
+              <li class="nav-item">
+                <a href="#skills" class="nav-link active" data-toggle="tab" role="tab">Skills</a>
+              </li>
+              <li class="nav-item">
+                <a href="#items" class="nav-link" data-toggle="tab" role="tab">Items</a>
+              </li>
+            </ul>
+
+            <div class="tab-content">
+              <div class="tab-pane active" id="skills" role="tabpanel">
+                <ul class="list-group">
+                  <li class="list-group-item">
+                    <span class="glyphicon glyphicon-thumbs-up"></span>
+                    <a href="#" data-toggle="modal" data-target="#frontEndDevelopment">Front End Development</a><br><span class="fa fa-thumbs-up" aria-hidden="true"></span><small>106</small>
+                  </li>
+                  <li class="list-group-item">
+                    <a href="#" data-toggle="modal" data-target="#cooking">Cooking</a><br><span class="fa fa-thumbs-up" aria-hidden="true"></span><small>25</small>
+                  </li>
+                </ul>
+              </div>
+              <div class="tab-pane" id="items" role="tabpanel">
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">
+                    <p><strong class="pr-2">Book</strong>YDKJS</p><span class="fa fa-thumbs-up" aria-hidden="true"></span><small>8</small></li>
+                  <li class="list-group-item">
+                    <p><strong class="pr-2">Machine</strong>Vacuum</p><span class="fa fa-thumbs-up" aria-hidden="true"></span><small>15</small></li>
+                  <li class="list-group-item">
+                    <p><strong class="pr-2">Instrument</strong>Violin</p><span class="fa fa-thumbs-up" aria-hidden="true"></span><small>20</small></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="mx-2 mx-md-4 p-1 p-md-2">
+            <div class="alert alert-info pt-0" style="max-width:250px; max-height:30px;" role="alert">
+              <button type="botton" class="close" data-dismiss="alert"><span>&times;</span></button>
+              <small>Studied at SJSU</small>
+            </div>
+            <div class="alert alert-info pt-0" style="max-width:250px; max-height:30px;" role="alert">
+              <button type="botton" class="close" data-dismiss="alert"><span>&times;</span></button>
+              <small>Working at Google</small>
+            </div>
+            <div class="alert alert-info pt-0" style="max-width:250px; max-height:30px;" role="alert">
+              <button type="botton" class="close" data-dismiss="alert"><span>&times;</span></button>
+              <small>Love to Travel</small>
+            </div>
+            <button class="btn btn-primary float-left">Add Tag</button>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+    <div class="col-12 col-md-7 hidden-md-down">
+      <div class="card">
+        <div class="card-block">
+          <h4 class="card-title text-center">Front End Development Road Map</h4>
+        </div>
+        <img src="http://i.imgur.com/3TxuwHy.png" width="65%" style="margin-left:17.5%" alt="front end road map" class="card-img-bottom">
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <div class="modal fade" id="frontEndDevelopment">
+    <div class="modal-dialog">
+      <div class="modal-content">
+
+        <div class="modal-header">
+          <h4 class="modal-title">Front End Development</h4>
+          <button class="btn btn-primary ml-0">Edit</button>
+          <button type="button" class="close" data-dismiss="modal">
+            &times;
+          </button>
+        </div>
+        <div class="list-group-item">
+          <ul class="nav nav-pills row" style="width:100%; ">
+            <li class="nav-item col-4 col-md-3 text-center py-1">
+              <a href="#html" class="nav-link disabled proficiency-5" data-toggle="tab" role="tab" style="border-color:grey; border-style:solid; border-width:2px;">
+                  <small>HTML</small>
+                </a>
+            </li>
+            <li class="nav-item col-4 col-md-3 text-center py-1">
+              <a href="#css" class="nav-link proficiency-3" data-toggle="tab" role="tab" style="border-color:grey; border-style:solid; border-width:2px;">
+                  <small>CSS</small>
+                </a>
+            </li>
+            <li class="nav-item col-4 col-md-3 text-center py-1">
+              <a href="#javascript" class="nav-link proficiency-3" data-toggle="tab" role="tab" style="border-color:grey; border-style:solid; border-width:2px;">
+                  <small>JavaSript</small>
+                </a>
+            </li>
+          </ul>
+
+        </div>
+
+
+
+
+        <div class="tab-content list-group-item" style="background-color:#F0F0F0;">
+          <div class="tab-pane" id="css" role="tabpanel" style="width:100%;">
+            <ul class="nav nav-pills row" style="width:100%;">
+              <li class="nav-item col-4 col-md-3 text-center py-1">
+                <a href="#css-responsiveWebDesign" class="nav-link disabled proficiency-5" data-toggle="tab" role="tab" style="border-color:grey; border-style:solid; border-width:2px;">
+                  <small>Responsive Web Design</small>
+                </a>
+              </li>
+              <li class="nav-item col-4 col-md-3 text-center py-1">
+                <a href="#css-preprocessor" class="nav-link proficiency-1" data-toggle="tab" role="tab" style="border-color:grey; border-style:solid; border-width:2px;">
+                  <small>Preprocessor</small>
+                </a>
+              </li>
+              <li class="nav-item col-4 col-md-3 text-center py-1">
+                <a href="#css-framework" class="nav-link proficiency-2" data-toggle="tab" role="tab" style="border-color:grey; border-style:solid; border-width:2px;">
+                  <small>Framework</small>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+
+          <div class="tab-pane" id="javascript" role="tabpanel" style="width:100%;">
+            <ul class="nav nav-pills row" style="width:100%;">
+              <li class="nav-item col-4 col-md-3 text-center py-1">
+                <a href="#javascript-taskRunner" class="nav-link proficiency-1" data-toggle="tab" role="tab" style="border-color:grey; border-style:solid; border-width:2px;">
+                  <small>Task Runner</small>
+                </a>
+              </li>
+              <li class="nav-item col-4 col-md-3 text-center py-1">
+                <a href="#javascript-packageManager" class="nav-link proficiency-3" data-toggle="tab" role="tab" style="border-color:grey; border-style:solid; border-width:2px;">
+                  <small>Package Manager</small>
+                </a>
+              </li>
+              <li class="nav-item col-4 col-md-3 text-center py-1">
+                <a href="#javascript-testing" class="nav-link proficiency-1" data-toggle="tab" role="tab" style="border-color:grey; border-style:solid; border-width:2px;">
+                  <small>Testing</small>
+                </a>
+              </li>
+              <li class="nav-item col-4 col-md-3 text-center py-1">
+                <a href="#javascript-es6" class="nav-link disabled proficiency-2" data-toggle="tab" role="tab" style="border-color:grey; border-style:solid; border-width:2px;">
+                  <small>ES6</small>
+                </a>
+              </li>
+              <li class="nav-item col-4 col-md-3 text-center py-1">
+                <a href="#javascript-framework" class="nav-link proficiency-4" data-toggle="tab" role="tab" style="border-color:grey; border-style:solid; border-width:2px;">
+                  <small>Framework</small>
+                </a>
+              </li>
+              <li class="nav-item col-4 col-md-3 text-center py-1">
+                <a href="#javascript-moduleLoader" class="nav-link proficiency-2" data-toggle="tab" role="tab" style="border-color:grey; border-style:solid; border-width:2px;">
+                  <small>Module Loader</small>
+                </a>
+              </li>
+              <li class="nav-item col-4 col-md-3 text-center py-1r">
+                <a href="#javascript-typescript" class="nav-link disabled proficiency-1" data-toggle="tab" role="tab" style="border-color:grey; border-style:solid; border-width:2px;">
+                  <small>Typescript</small>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="tab-content list-group-item">
+          <div class="tab-pane" id="css-preprocessor" role="tabpanel" style="width:100%;">
+            <ul class="nav nav-pills row" style="width:100%;">
+              <li class="nav-item col-4 col-md-3 text-center py-1">
+                <a href="#css-preprocessor-sass" class="nav-link disabled proficiency-3" data-toggle="tab" role="tab" style="border-color:grey; border-style:solid; border-width:2px;">
+                    <small>Sass</small>
+                  </a>
+              </li>
+              <li class="nav-item col-4 col-md-3 text-center py-1">
+                <a href="#css-preprocessor-less" class="nav-link disabled proficiency-1" data-toggle="tab" role="tab" style="border-color:grey; border-style:solid; border-width:2px;">
+                    <small>Less</small>
+                  </a>
+              </li>
+              <li class="nav-item col-4 col-md-3 text-center py-1">
+                <a href="#css-preprocessor-stylus" class="nav-link disabled proficiency-4" data-toggle="tab" role="tab" style="border-color:grey; border-style:solid; border-width:2px;">
+                    <small>Stylus</small>
+                  </a>
+              </li>
+              <li class="nav-item col-4 col-md-3 text-center py-1">
+                <a href="#css-preprocessor-postcss" class="nav-link disabled proficiency-1" data-toggle="tab" role="tab" style="border-color:grey; border-style:solid; border-width:2px;">
+                    <small>PostCSS</small>
+                  </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="tab-pane" id="css-framework" role="tabpanel" style="width:100%;">
+            <ul class="nav nav-pills row" style="width:100%;">
+              <li class="nav-item col-4 col-md-3 text-center py-1">
+                <a href="#css-preprocessor-foundation" class="nav-link disabled proficiency-1" data-toggle="tab" role="tab" style="border-color:grey; border-style:solid; border-width:2px;">
+                    <small>Foundation</small>
+                  </a>
+              </li>
+              <li class="nav-item col-4 col-md-3 text-center py-1">
+                <a href="#css-preprocessor-bootstrap" class="nav-link disabled proficiency-5" data-toggle="tab" role="tab" style="border-color:grey; border-style:solid; border-width:2px;">
+                    <small>Bootstrap</small>
+                  </a>
+              </li>
+              <li class="nav-item col-4 col-md-3 text-center py-1">
+                <a href="#css-preprocessor-materializeCSS" class="nav-link disabled proficiency-1" data-toggle="tab" role="tab" style="border-color:grey; border-style:solid; border-width:2px;">
+                    <small>Materialize CSS</small>
+                  </a>
+              </li>
+              <li class="nav-item col-4 col-md-3 text-center py-1">
+                <a href="#css-preprocessor-sementicUI" class="nav-link disabled proficiency-6" data-toggle="tab" role="tab" style="border-color:grey; border-style:solid; border-width:2px;">
+                    <small>Sementic UI</small>
+                  </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="tab-pane" id="javascript-taskRunner" role="tabpanel" style="width:100%;">
+            <ul class="nav nav-pills row" style="width:100%;">
+              <li class="nav-item col-4 col-md-3 text-center py-1">
+                <a href="#javascript-taskRunner-npmScripts" class="nav-link disabled proficiency-2" data-toggle="tab" role="tab" style="border-color:grey; border-style:solid; border-width:2px;">
+                    <small>npm Scripts</small>
+                  </a>
+              </li>
+              <li class="nav-item col-4 col-md-3 text-center py-1">
+                <a href="#javascript-taskRunner-gulp" class="nav-link disabled proficiency-3" data-toggle="tab" role="tab" style="border-color:grey; border-style:solid; border-width:2px;">
+                    <small>gulp</small>
+                  </a>
+              </li>
+              <li class="nav-item col-4 col-md-3 text-center py-1">
+                <a href="#javascript-taskRunner-grunt" class="nav-link disabled proficiency-1" data-toggle="tab" role="tab" style="border-color:grey; border-style:solid; border-width:2px;">
+                    <small>Grunt</small>
+                  </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="tab-pane" id="javascript-packageManager" role="tabpanel" style="width:100%;">
+            <ul class="nav nav-pills row" style="width:100%;">
+              <li class="nav-item col-4 col-md-3 text-center py-1">
+                <a href="#javascript-packageManager-yarn" class="nav-link disabled proficiency-1" data-toggle="tab" role="tab" style="border-color:grey; border-style:solid; border-width:2px;">
+                    <small>Yarn</small>
+                  </a>
+              </li>
+              <li class="nav-item col-4 col-md-3 text-center py-1">
+                <a href="#javascript-packageManager-npm" class="nav-link disabled proficiency-4" data-toggle="tab" role="tab" style="border-color:grey; border-style:solid; border-width:2px;">
+                    <small>npm</small>
+                  </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="tab-pane" id="javascript-framework" role="tabpanel" style="width:100%;">
+            <ul class="nav nav-pills row" style="width:100%;">
+              <li class="nav-item col-4 col-md-3 text-center py-1">
+                <a href="#javascript-framework-angular" class="nav-link disabled proficiency-2" data-toggle="tab" role="tab" style="border-color:grey; border-style:solid; border-width:2px;">
+                    <small>Angular</small>
+                  </a>
+              </li>
+              <li class="nav-item col-4 col-md-3 text-center py-1">
+                <a href="#javascript-framework-react" class="nav-link disabled proficiency-4" data-toggle="tab" role="tab" style="border-color:grey; border-style:solid; border-width:2px;">
+                    <small>React</small>
+                  </a>
+              </li>
+              <li class="nav-item col-4 col-md-3 text-center py-1">
+                <a href="#javascript-framework-vue" class="nav-link disabled proficiency-1" data-toggle="tab" role="tab" style="border-color:grey; border-style:solid; border-width:2px;">
+                    <small>Vue.js</small>
+                  </a>
+              </li>
+              <li class="nav-item col-4 col-md-3 text-center py-1">
+                <a href="#javascript-framework-emberJs" class="nav-link disabled proficiency-5" data-toggle="tab" role="tab" style="border-color:grey; border-style:solid; border-width:2px;">
+                    <small>Ember JS</small>
+                  </a>
+              </li>
+              <li class="nav-item col-4 col-md-3 text-center py-1">
+                <a href="#javascript-framework-preact" class="nav-link disabled proficiency-1" data-toggle="tab" role="tab" style="border-color:grey; border-style:solid; border-width:2px;">
+                    <small>Preact</small>
+                  </a>
+              </li>
+              <li class="nav-item col-4 col-md-3 text-center py-1">
+                <a href="#javascript-framework-inferno" class="nav-link disabled proficiency-6" data-toggle="tab" role="tab" style="border-color:grey; border-style:solid; border-width:2px;">
+                    <small>Inferno</small>
+                  </a>
+              </li>
+              <li class="nav-item col-4 col-md-3 text-center py-1">
+                <a href="#javascript-framework-flux" class="nav-link disabled proficiency-1" data-toggle="tab" role="tab" style="border-color:grey; border-style:solid; border-width:2px;">
+                    <small>Flux</small>
+                  </a>
+              </li>
+              <li class="nav-item col-4 col-md-3 text-center py-1">
+                <a href="#javascript-framework-redux" class="nav-link disabled proficiency-5" data-toggle="tab" role="tab" style="border-color:grey; border-style:solid; border-width:2px;">
+                    <small>Redux</small>
+                  </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="tab-pane" id="javascript-testing" role="tabpanel" style="width:100%;">
+            <ul class="nav nav-pills row" style="width:100%;">
+              <li class="nav-item col-4 col-md-3 text-center py-1">
+                <a href="#javascript-testing-jest" class="nav-link disabled proficiency-1" data-toggle="tab" role="tab" style="border-color:grey; border-style:solid; border-width:2px;">
+                    <small>Jest</small>
+                  </a>
+              </li>
+              <li class="nav-item col-4 col-md-3 text-center py-1">
+                <a href="#javascript-testing-mocha" class="nav-link disabled proficiency-3" data-toggle="tab" role="tab" style="border-color:grey; border-style:solid; border-width:2px;">
+                    <small>Mocha</small>
+                  </a>
+              </li>
+              <li class="nav-item col-4 col-md-3 text-center py-1">
+                <a href="#javascript-testing-jasmine" class="nav-link disabled proficiency-1" data-toggle="tab" role="tab" style="border-color:grey; border-style:solid; border-width:2px;">
+                    <small>Jasmine</small>
+                  </a>
+              </li>
+
+            </ul>
+          </div>
+
+
+          <div class="tab-pane" id="javascript-moduleLoader" role="tabpanel" style="width:100%;">
+            <ul class="nav nav-pills row" style="width:100%;">
+              <li class="nav-item col-4 col-md-3 text-center py-1">
+                <a href="#javascript-moduleLoader-webPack" class="nav-link disabled proficiency-5" data-toggle="tab" role="tab" style="border-color:grey; border-style:solid; border-width:2px;">
+                    <small>Web Pack</small>
+                  </a>
+              </li>
+              <li class="nav-item col-4 col-md-3 text-center py-1">
+                <a href="#javascript-moduleLoader-requireJS" class="nav-link disabled proficiency-1" data-toggle="tab" role="tab" style="border-color:grey; border-style:solid; border-width:2px;">
+                    <small>RequireJS</small>
+                  </a>
+              </li>
+              <li class="nav-item col-4 col-md-3 text-center py-1">
+                <a href="#javascript-moduleLoader-browserify" class="nav-link disabled proficiency-2" data-toggle="tab" role="tab" style="border-color:grey; border-style:solid; border-width:2px;">
+                    <small>Browserify</small>
+                  </a>
+              </li>
+
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+  <div class="modal fade" id="message">
+    <div class="modal-dialog">
+      <div class="modal-content">
+
+        <div class="modal-header">
+          <h4 class="modal-title">Messages</h4>
+          <button type="button" class="close" data-dismiss="modal">
+            &times;
+          </button>
+        </div>
+
+        <div class="list-group">
+          <div href="#" class="list-group-item">
+            <div class="media mb-0">
+              <div href="#" class="media-left mr-2">
+                <img src="https://scontent.fsnc1-2.fna.fbcdn.net/v/t31.0-8/10286829_707942852597448_6516750073974086452_o.jpg?oh=edbd306b3e81312e7ead74bed11ece2e&oe=59EE8B58" alt="" class="media-object" style="max-width:50px">
+              </div>
+              <div class="media-body">
+                <p class="media-heading mb-0"><strong>Madhu Sudhan</strong></p>
+                <p class="mb-0">This is so fun, you guys will love it...<small>(2 unread)</small></p>
+              </div>
+            </div>
+          </div>
+
+          <div href="#" class="list-group-item" style="background-color:#F0F0F0;">
+            <div class="media">
+              <div href="#" class="media-left mr-2">
+                <img src="https://scontent.fsnc1-2.fna.fbcdn.net/v/t1.0-9/11066787_1600484476855687_7425021904390141607_n.jpg?oh=f908baf283cf0ee57f3eeaa89146f312&oe=5A014377" alt="" class="media-object" style="max-width:50px">
+              </div>
+              <div class="media-body">
+                <p class="media-heading mb-0"><strong>Ming Zhu</strong></p>
+                <p class="mb-0">I'm so handsome, I'm so cool, I'm so awe...<small>(100 unread)</small></p>
+              </div>
+            </div>
+          </div>
+
+          <div href="#" class="list-group-item">
+            <div class="media">
+              <div href="#" class="media-left mr-2">
+                <img src="http://i.imgur.com/pNXPrS7.jpg" alt="" class="media-object" style="max-width:50px">
+              </div>
+              <div class="media-body">
+                <p class="media-heading mb-0"><strong>Albert Einstein</strong></p>
+                <p class="mb-0">Heard you good at String theory? Wonder if we could...</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary">Mark as read</button>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+  <script src="index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="style.css">
+  <!--css & JavaScript file-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+  <!--bootstrap-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+  <!--ajax animation-->
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Tangerine|Pacifico">
+  <!--google fonts-->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+  <title>Login and Registration</title>
+</head>
+
+<body class="bg-faded mt-5">
+
+  <div class="container">
+    <div class="row">
+      <div class="col-10 offset-1 col-md-4 offset-md-4">
+        <div class="tab-content">
+
+          <!--login pane-->
+          <div class="tab-pane active" id="login" role="tabpanel">
+            <div class="card">
+              <div class="card-block pt-3">
+
+                <h4 class="text-center m-0">PROJECT CB</h4>
+                <p class="text-center pb-2 m-0" style="color:red;"><small>--SUPER POWERS Around you</small></p>
+                <div class="alert alert-warning" style="display:none;" id="loginFailAlert" role="alert">
+                  <strong class="text-danger">Incorrect user name or password</strong>
+                </div>
+
+                <h4 class="card-title text-center text-uppercase text-success">Login</h4>
+                <p class="card-text text-center text-muted">
+                  <small>Please fill in your Login information</small>
+                </p>
+
+                <form action="">
+                  <div class="form-group">
+                    <label for="loginEmail">Email address</label>
+                    <input type="email" class="form-control" id="loginEmail" placeholder="Enter email">
+                  </div>
+
+                  <fieldset class="form-group">
+                    <label for="loginPassword">Password</label>
+                    <input type="password" onkeydown="if (event.keyCode == 13) {checkLogin(); return false;}" class="form-control" id="loginPassword" placeholder="Enter password">
+                  </fieldset>
+
+                  <div class="checkbox float-left">
+                    <label for="rememberMe">
+                      <input type="checkbox" id="rememberMe">remember me*</input>
+                    </label>
+                  </div>
+
+                  <a href="#" class="float-right">Forgot Password*</a>
+
+                <button type="button" onclick="checkLogin();" class="btn btn-success btn-block">Login</button>
+
+                </form>
+              </div>
+              <div class="card-footer text-muted text-center">
+                Don't have and account?
+                <a href="#register" data-toggle="tab" role="tab" class="text-warning">Sign up!</a>
+              </div>
+            </div>
+          </div>
+
+
+          <!--register pane-->
+          <div class="tab-pane" id="register" role="tabpanel">
+            <div class="card">
+              <div class="card-block pt-3">
+                <h4 class="text-center pb-2 m-0">PROJECT CB</h4>
+                <p class="text-center pb-2 m-0" style="color:red;"><small>--SUPER POWERS Around you</small></p>
+                <h4 class="card-title text-center text-uppercase text-warning">Register</h4>
+                <p class="card-text text-center text-muted">
+                  <small>Please fill in your registration information</small>
+                </p>
+
+                <div class="alert alert-danger" style="display:none;" id="regisOverlapAlert" role="alert">
+                  <strong>This email is used</strong> Go to <a href="#login" data-toggle="tab" role="tab">Login</a>
+                </div>
+
+                <div class="alert alert-success" style="display:none;" id="regisSuccessAlert" role="alert">
+                  <strong>Success!</strong> Go to <a href="#login" data-toggle="tab" role="tab">Login</a>
+                </div>
+                <form action="">
+                  <div class="form-group">
+                    <label for="registerEmail">Email address</label>
+                    <input type="email" class="form-control" id="registerEmail" placeholder="Enter email">
+                  </div>
+
+                  <fieldset class="form-group">
+                    <label for="registerPassword">Password</label>
+                    <input type="password" onkeydown="if (event.keyCode == 13) {register(); return false;}" class="form-control" id="registerPassword" placeholder="Enter password">
+                  </fieldset>
+
+                <button type="button" onclick="register();" class="btn btn-block btn-warning">Join Now!</button>
+
+                </form>
+              </div>
+              <div class="card-footer text-muted text-center">
+                Already have an account?
+                <a href="#login" data-toggle="tab" role="tab" class="text-success">Login!</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+  <script src="index.js"></script>
+</body>
+
+</html>

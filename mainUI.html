@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="style.css">
+  <!--css & JavaScript file-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+  <!--bootstrap-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+  <!--ajax animation-->
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Tangerine|Pacifico">
+  <!--google fonts-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+  <title>ProjectCB</title>
+</head>
+
+<body class="bg-faded">
+  <nav class="navbar navbar-toggleable navbar-inverse bg-primary py-sm-3 py-1">
+    <div class="container-fluid">
+      <!--why did this container draw the search bar to the left-->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a class="navbar-brand hidden-sm-up pl-1" href="#"><small>ProjectCB</small></a>
+      <form onsubmit="return false;" style="display:inline;"class="form-inline ml-auto hidden-sm-up">
+        <input type="text" class="px-1 py-1" onkeydown="if (event.keyCode == 13) {search(); return false;}" placeholder="&#xf041; Nearby Super Power &#xF002;" style="font-family:Arial, FontAwesome" required></input>
+      </form>
+      <div class="collapse navbar-collapse" id="collapsingNavbar">
+        <a class="navbar-brand hidden-sm-down pl-2" href="#">ProjectCB</a>
+        <ul class="navbar-nav" id=collapsingNavbar>
+          <li class="nav-item active">
+            <a class="nav-link" href="mainUI.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="profile.html">Profile</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" data-toggle="modal" data-target="#message">Messages</a>
+          </li>
+        </ul>
+        <form onsubmit="return false;" class="form-inline ml-auto hidden-sm-down">
+          <input type="text" class="px-1 py-1" onkeydown="if (event.keyCode == 13) {search(); return false;}" placeholder="&#xf041; Nearby Super Power  &#xF002;" style="font-family:Arial, FontAwesome" required></input>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+
+
+  <div class="container py-3">
+    <div class="card-columns">
+
+      <div class="card card-success card-inverse">
+        <div class="card-block">
+          <p class="card-title">Wow you are here! look around and start your voyage by building your profile!</p>
+          <p class="card-text">Project CB team<small class="text-muted ml-3">Just now</small></p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img class="card-img-top" src="http://i.imgur.com/canemKH.jpg" width="100%" alt="self driving">
+        <div class="card-block">
+          <h4 class="card-title">Computer Vision</h4>
+          <p class="card-text">In the past weeks, 8 people around you strengthened their skill under computer vision catagory. Time don't always wait.</p>
+          <p class="card-text"><small class="text-muted">Last Updated 3 mins ago</small></p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img class="card-img-top" src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAmMAAAAJGMxOGJlMmY1LTAxODMtNDIxMi1iNzc5LWIxNTJmNWY3MmIwNA.jpg" width="100%" alt="person">
+        <div class="card-block">
+          <h4 class="card-title">Star teacher of the month</h4>
+          <p class="card-text">145 likes on her skill trees</p>
+          <p class="card-text"><small class="text-muted">Last Updated 20 mins ago</small></p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-block">
+          <p class="card-title">
+            Dude, I can't believe I got a job in this field! Thanks everyone for your support in the past year.
+          </p>
+          <p class="card-text">Shav<small class="text-muted ml-3">Last Updated 45 mins ago</small></p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-block">
+          <p class="card-title">
+            Hey guys, we are working on a super cool project and we just posted our requirement tree. Check us out and feel free to message me!
+          </p>
+          <p class="card-text">Song<small class="text-muted ml-3">Last Updated 2 hrs ago</small></p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-block">
+          <p class="card-text">
+            I would like to welcome everybody to visit my <a href="#">Youtube Channel</a>. I'm making this new video about cryptocurrency. Fill in your curious mind!
+          </p>
+          <p class="card-text">Vim girl<small class="text-muted ml-3">Last Updated 5 hrs ago</small></p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img class="card-img-top" src="http://i.imgur.com/vcr8U1n.jpg" width="100%" alt="self driving">
+        <div class="card-block">
+          <p class="card-text">Welcome to our physics club everyone!!!</p>
+          <p class="card-text">Emmanuel<small class="text-muted ml-3">Last Updated 10 hrs ago</small></p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img class="card-img-top" src="http://i.imgur.com/eizhtB7.jpg" width="100%" alt="stars">
+        <div class="card-block">
+          <p class="card-text">Just took this new picture from my new telescope. It is not yet for lending but you are always welcomed to come over.</p>
+          <p class="card-text">Harry<small class="text-muted ml-3">Last Updated 10 hrs ago</small></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="modal fade" id="message">
+    <div class="modal-dialog">
+      <div class="modal-content">
+
+        <div class="modal-header">
+          <h4 class="modal-title">Messages</h4>
+          <button type="button" class="close" data-dismiss="modal">
+            &times;
+          </button>
+        </div>
+
+        <div class="list-group">
+          <div href="#" class="list-group-item">
+            <div class="media mb-0">
+              <div href="#" class="media-left mr-2">
+                <img src="https://scontent.fsnc1-2.fna.fbcdn.net/v/t31.0-8/10286829_707942852597448_6516750073974086452_o.jpg?oh=edbd306b3e81312e7ead74bed11ece2e&oe=59EE8B58" alt="" class="media-object" style="max-width:50px">
+              </div>
+              <div class="media-body">
+                <p class="media-heading mb-0"><strong>Madhu Sudhan</strong></p>
+                <p class="mb-0">This is so fun, you guys will love it...<small>(2 unread)</small></p>
+              </div>
+            </div>
+          </div>
+
+          <div href="#" class="list-group-item">
+            <div class="media">
+              <div href="#" class="media-left mr-2">
+                <img src="https://scontent.fsnc1-2.fna.fbcdn.net/v/t1.0-9/11066787_1600484476855687_7425021904390141607_n.jpg?oh=f908baf283cf0ee57f3eeaa89146f312&oe=5A014377" alt="" class="media-object" style="max-width:50px">
+              </div>
+              <div class="media-body">
+                <p class="media-heading mb-0"><strong>Ming Zhu</strong></p>
+                <p class="mb-0">I'm so handsome, I'm so cool, I'm so awe...<small>(100 unread)</small></p>
+              </div>
+            </div>
+          </div>
+
+          <div href="#" class="list-group-item">
+            <div class="media">
+              <div href="#" class="media-left mr-2">
+                <img src="http://i.imgur.com/pNXPrS7.jpg" alt="" class="media-object" style="max-width:50px">
+              </div>
+              <div class="media-body">
+                <p class="media-heading mb-0"><strong>Albert Einstein</strong></p>
+                <p class="mb-0">Heard you good at String theory? Wonder if we could...</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary">Mark as read</button>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+
+  <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+  <script src="index.js"></script>
+</body>
+
+</html>

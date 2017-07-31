@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="style.css">
+  <!--css & JavaScript file-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+  <!--bootstrap-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+  <!--ajax animation-->
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Tangerine|Pacifico">
+  <!--google fonts-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+  <title>ProjectCB</title>
+</head>
+
+<body class="bg-faded container-fluid">
+  <nav class="navbar navbar-toggleable navbar-inverse bg-primary py-sm-3 py-1">
+    <div class="container-fluid">
+      <!--why did this container draw the search bar to the left-->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a class="navbar-brand hidden-sm-up pl-1" style="font-size:16px;" href="#"><small>ProjectCB</small></a>
+      <form onsubmit="return false;" style="display:inline;" class="form-inline ml-auto hidden-sm-up">
+        <input type="text" class="px-1 py-1" onkeydown="if (event.keyCode == 13) {search(); return false;}" placeholder="&#xf041; Nearby Super Power &#xF002;" style="font-family:Arial, FontAwesome" required></input>
+      </form>
+
+      <div class="collapse navbar-collapse" id="collapsingNavbar">
+        <a class="navbar-brand hidden-sm-down pl-2" href="#">ProjectCB</a>
+        <ul class="navbar-nav" id=collapsingNavbar>
+          <li class="nav-item">
+            <a class="nav-link" href="mainUI.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="profile.html">Profile</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" data-toggle="modal" data-target="#message">Messages</a>
+          </li>
+        </ul>
+        <form onsubmit="return false;" class="form-inline ml-auto hidden-sm-down">
+          <input type="text" class="px-1 py-1" onkeydown="if (event.keyCode == 13) {search(); return false;}" placeholder="&#xf041; Nearby Super Power  &#xF002;" style="font-family:Arial, FontAwesome" required></input>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <h1 class="text-muted ml-2 mt-1 ml-md-5 mt-md-4"><span class="fa fa-search"></span> Search Result for <strong>CSS</strong></h1>
+
+  <div class="container py-3">
+    <div class="card card-block mb-2">
+      <div class="media">
+        <img class="img-thumbnail align-self-center" width="22%" style="max-width:150px" src="https://pbs.twimg.com/profile_images/743138182607175680/ZJzktgBk_400x400.jpg" alt="jon snow">
+        <div class="media-body pl-2 pl-md-3 row">
+          <div class="col-7 col-md-8">
+            <a href="#" style="font-size:25px">Jon Snow</a>
+            <p class="mb-0" style="color:#E74C3C">
+              <span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span>
+              <br><small style="color:grey;">rated by 150 people</small>
+            </p>
+            <p class="mb-0"style=" max-width:400px;">1.Front End Development <br> 2.Guitar</p>
+            <p style="color:brown;"><span class="fa fa-paper-plane pr-1"></span>200 ft away</p>
+          </div>
+          <div class="col-5 col-md-4 row">
+            <button class="btn btn-muted btn-block col-12">Message</button>
+            <button class="btn btn-muted btn-block col-12">Connect</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card card-block mb-2">
+      <div class="media">
+        <img class="img-thumbnail align-self-center" width="22%" style="max-width:150px" src="https://pbs.twimg.com/profile_images/791400000576221184/ZcqWUN2H.jpg" alt="Daenerys Targaryen">
+        <div class="media-body pl-2 pl-md-3 row">
+          <div class="col-7 col-md-8">
+            <a href="#" style="font-size:25px">Daenerys Targaryen</a>
+            <p class="mb-0" style="color:#E74C3C">
+              <span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star-half-o"></span><span class="fa fa-star-o"></span>
+              <br><small style="color:grey;">rated by 68 people</small>
+            </p>
+            <p class="mb-0"style=" max-width:400px;">1.Front End Development</p>
+            <p style="color:brown;"><span class="fa fa-paper-plane pr-1"></span>650 ft away</p>
+          </div>
+          <div class="col-5 col-md-4 row">
+            <button class="btn btn-muted btn-block col-12">Message</button>
+            <button class="btn btn-muted btn-block col-12">Connect</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card card-block mb-2">
+      <div class="media">
+        <img class="img-thumbnail align-self-center" width="22%" style="max-width:150px" src="http://4.bp.blogspot.com/-Sn8DMUhRBcY/UBWkR73_XGI/AAAAAAAAAXc/KP7-zspVktk/s1600/tyrion.png" alt="Tyion Lannister">
+        <div class="media-body pl-2 pl-md-3 row">
+          <div class="col-7 col-md-8">
+            <a href="#" style="font-size:25px">Tyion Lannister</a>
+            <p class="mb-0" style="color:#E74C3C">
+              <span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star-o"></span>
+              <br><small style="color:grey;">rated by 99 people</small>
+            </p>
+            <p class="mb-0"style=" max-width:400px;">1.Cooking <br> 2.Front End Development</p>
+            <p style="color:brown;"><span class="fa fa-paper-plane pr-1"></span>963 ft away</p>
+          </div>
+          <div class="col-5 col-md-4 row">
+            <button class="btn btn-muted btn-block col-12">Message</button>
+            <button class="btn btn-muted btn-block col-12">Connect</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card card-block mb-2">
+      <div class="media">
+        <img class="img-thumbnail align-self-center" width="22%" style="max-width:150px" src="https://patricksponaugle.files.wordpress.com/2014/01/arya-stark-arya-stark-26321218-371-352.png" alt="Arya Stark">
+        <div class="media-body pl-2 pl-md-3 row">
+          <div class="col-7 col-md-8">
+            <a href="#" style="font-size:25px">Arya Stark</a>
+            <p class="mb-0" style="color:#E74C3C">
+              <span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star-half-o"></span>
+              <br><small style="color:grey;">rated by 220 people</small>
+            </p>
+            <p class="mb-0"style=" max-width:400px;">1.Front End Development <br> 2.Drawing</p>
+            <p style="color:brown;"><span class="fa fa-paper-plane pr-1"></span>1024 ft away</p>
+          </div>
+          <div class="col-5 col-md-4 row">
+            <button class="btn btn-muted btn-block col-12">Message</button>
+            <button class="btn btn-muted btn-block col-12">Connect</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card card-block mb-2">
+      <div class="media">
+        <img class="img-thumbnail align-self-center" width="22%" style="max-width:150px" src="http://vignette3.wikia.nocookie.net/gameofthrones/images/4/4c/JoffreyBaratheon-Profile.PNG/revision/latest?cb=20160626094917" alt="Poisoned Baratheon">
+        <div class="media-body pl-2 pl-md-3 row">
+          <div class="col-7 col-md-8">
+            <a href="#" style="font-size:25px">Poisoned Baratheon</a>
+            <p class="mb-0" style="color:#E74C3C">
+              <span class="fa fa-star-half-o"></span><span class="fa fa-star-o"></span><span class="fa fa-star-o"></span><span class="fa fa-star-o"></span><span class="fa fa-star-o"></span>
+              <br><small style="color:grey;">rated by 15 people</small>
+            </p>
+            <p class="mb-0"style=" max-width:400px;">1.Front End Development <br> 2.Back End Development</p>
+            <p style="color:brown;"><span class="fa fa-paper-plane pr-1"></span>1100 ft away</p>
+          </div>
+          <div class="col-5 col-md-4 row">
+            <button class="btn btn-muted btn-block col-12">Message</button>
+            <button class="btn btn-muted btn-block col-12">Connect</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card card-block mb-2">
+      <div class="media">
+        <img class="img-thumbnail align-self-center" width="22%" style="max-width:150px" src="http://3.bp.blogspot.com/-GRSV_O-2jCY/UAJWl4lbYpI/AAAAAAAAAHg/CULKYQmuhDI/s1600/Just-Bron.jpg" alt="Bronn">
+        <div class="media-body pl-2 pl-md-3 row">
+          <div class="col-7 col-md-8">
+            <a href="#" style="font-size:25px">Bronn</a>
+            <p class="mb-0" style="color:#E74C3C">
+              <span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star-half-o"></span>
+              <br><small style="color:grey;">rated by 150 people</small>
+            </p>
+            <p class="mb-0"style=" max-width:400px;">1.Front End Development <br> 2.Singing</p>
+            <p style="color:brown;"><span class="fa fa-paper-plane pr-1"></span>1500 ft away</p>
+          </div>
+          <div class="col-5 col-md-4 row">
+            <button class="btn btn-muted btn-block col-12">Message</button>
+            <button class="btn btn-muted btn-block col-12">Connect</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+  <div class="modal fade" id="message">
+    <div class="modal-dialog">
+      <div class="modal-content">
+
+        <div class="modal-header">
+          <h4 class="modal-title">Messages</h4>
+          <button type="button" class="close" data-dismiss="modal">
+            &times;
+          </button>
+        </div>
+
+        <div class="list-group">
+          <div href="#" class="list-group-item">
+            <div class="media mb-0">
+              <div href="#" class="media-left mr-2">
+                <img src="https://scontent.fsnc1-2.fna.fbcdn.net/v/t31.0-8/10286829_707942852597448_6516750073974086452_o.jpg?oh=edbd306b3e81312e7ead74bed11ece2e&oe=59EE8B58" alt="" class="media-object" style="max-width:50px">
+              </div>
+              <div class="media-body">
+                <p class="media-heading mb-0"><strong>Madhu Sudhan</strong></p>
+                <p class="mb-0">This is so fun, you guys will love it...<small>(2 unread)</small></p>
+              </div>
+            </div>
+          </div>
+
+          <div href="#" class="list-group-item" style="background-color:#F0F0F0;">
+            <div class="media">
+              <div href="#" class="media-left mr-2">
+                <img src="https://scontent.fsnc1-2.fna.fbcdn.net/v/t1.0-9/11066787_1600484476855687_7425021904390141607_n.jpg?oh=f908baf283cf0ee57f3eeaa89146f312&oe=5A014377" alt="" class="media-object" style="max-width:50px">
+              </div>
+              <div class="media-body">
+                <p class="media-heading mb-0"><strong>Ming Zhu</strong></p>
+                <p class="mb-0">I'm so handsome, I'm so cool, I'm so awe...<small>(100 unread)</small></p>
+              </div>
+            </div>
+          </div>
+
+          <div href="#" class="list-group-item">
+            <div class="media">
+              <div href="#" class="media-left mr-2">
+                <img src="http://i.imgur.com/pNXPrS7.jpg" alt="" class="media-object" style="max-width:50px">
+              </div>
+              <div class="media-body">
+                <p class="media-heading mb-0"><strong>Albert Einstein</strong></p>
+                <p class="mb-0">Heard you good at String theory? Wonder if we could...</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary">Mark as read</button>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+  <script src="profile.js"></script>
+</body>
+
+</html>

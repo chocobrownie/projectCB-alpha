@@ -1,0 +1,42 @@
+.container-fluid{
+  width:100%;
+}
+.text-light{
+  color:#ffffff
+}
+.proficiency-1{
+  background-image:url("http://i.imgur.com/61dM6om.png");
+  background-size:100% 100%;
+  background-repeat:no-repeat;
+}
+.proficiency-2{
+  background-image:url("http://i.imgur.com/X87wMjb.png");
+  background-size:100% 100%;
+  background-repeat:no-repeat;
+}
+.proficiency-3{
+  background-image:url("http://i.imgur.com/aAHVW7D.png");
+  background-size:100% 100%;
+  background-repeat:no-repeat;
+}
+.proficiency-4{
+  background-image:url("http://i.imgur.com/IGuZJZa.png");
+  background-size:100% 100%;
+  background-repeat:no-repeat;
+}
+.proficiency-5{
+  background-image:url("http://i.imgur.com/4HLlqCM.png");
+  background-size:100% 100%;
+  background-repeat:no-repeat;
+}
+.proficiency-6{
+  background-image:url("http://i.imgur.com/F0dyV3q.png");
+  background-size:100% 100%;
+  background-repeat:no-repeat;
+}
+.nav-pills .nav-link.active,
+.nav-pills .nav-item.show .nav-link {
+  color: red;
+  cursor: default;
+  background-color: red;
+}
